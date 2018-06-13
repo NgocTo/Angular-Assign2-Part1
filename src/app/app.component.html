@@ -1,10 +1,18 @@
 
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}
   </h1>
 </div>
-<h2>List of customers</h2>
-<app-customer></app-customer>
-<h2>List of items</h2>
-<app-item></app-item>
+<div class="tab">
+    <button class="tablinks" onclick="service(event, 'Customers')">Customers</button>
+    <button class="tablinks" onclick="service(event, 'Items')">Items</button>
+</div>
+  <div id="Customers" class="tabcontent">
+    <h2>List of customers</h2>
+    <app-customer></app-customer>
+  </div>
+  <div id="Items" class="tabcontent">
+      <h2>List of items</h2>
+      <app-item></app-item>
+  </div>
