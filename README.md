@@ -6,6 +6,9 @@ This assignment is about shopping service.
 
 ## Models
 
+### Customer
+This shows information of customers.
+
 ### Item
 This shows properties of an item.
 
