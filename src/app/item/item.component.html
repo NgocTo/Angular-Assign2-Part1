@@ -1,0 +1,20 @@
+<!--This will display all the items -->
+
+<h2>Items</h2>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>Date Imported</th>
+    <th>In Stock</th>
+  </tr>
+  <tr *ngFor="let i of items">
+    <td>{{ i.productName }}</td>
+    <td>{{ i.quantity }}</td>
+    <td>{{ i.price }}</td>
+    <td>{{ i.dateImported.toDateString() }}</td>
+    <td>{{ i.inStock }}</td>
+  </tr>
+</table>

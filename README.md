@@ -6,7 +6,14 @@ This assignment is about shopping service.
 
 ## Models
 
-### Items
+### Item
 This shows properties of an item.
+
+## Service
+This contains data for items and customers.
+
+## Component
+This will display the data of items and customers.
+
 
 
