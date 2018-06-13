@@ -1,11 +1,15 @@
+
+<p>A list of customers who have purchased our products is displayed here.</p>
+
 <!-- search function  -->
-<div>
-<label for="name">Search customer: </label> <br/>
-<input type="text" class="form-control" id="name" [(ngModel)] = "customerSearch.firstName">
-<button (click)="findCustomer(customerSearch)">Search</button>
+
+<div class="customer-search">
+    <label for="name">Search customer: </label>
+    <input type="text" class="form-control" id="name" placeholder="Enter first name..." [(ngModel)] = "customerSearch.firstName">
+  <button (click)="findCustomer(customerSearch)">Search</button>
 </div>
 <!-- display data -->
-<table>
+<table class="customer-info">
   <tr>
     <th>Name</th>
     <th>Postal Code</th>

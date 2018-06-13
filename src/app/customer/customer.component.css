@@ -1,15 +1,30 @@
 table, tr, th, td {
     padding: 0.5em 1em;
+    border: 0px;
+}
+table th {
+    background-color: lightgray;
+}
+.customer-search {
+    margin: auto;
+    text-align: center;
+}
+.customer-info {
+    margin: auto;
 }
 button {
     border: 1px solid lightgray;
-    background-color: darkslategrey;
+    background-color: #404040;
     padding: 0.5em 1em;
     color: white;
     border-radius: 5%;
+}
+label {
+    width: 20%;
 }
 input {
     border-radius: 5%;
     border: 1px solid lightgray;
     line-height: 2em;
+    width: 60%;
 }
