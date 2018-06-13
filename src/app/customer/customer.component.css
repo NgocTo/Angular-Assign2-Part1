@@ -1,0 +1,15 @@
+table, tr, th, td {
+    padding: 0.5em 1em;
+}
+button {
+    border: 1px solid lightgray;
+    background-color: darkslategrey;
+    padding: 0.5em 1em;
+    color: white;
+    border-radius: 5%;
+}
+input {
+    border-radius: 5%;
+    border: 1px solid lightgray;
+    line-height: 2em;
+}

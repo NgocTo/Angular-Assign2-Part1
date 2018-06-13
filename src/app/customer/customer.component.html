@@ -1,1 +1,23 @@
-<p>This is the customer component</p>
+<!-- search function  -->
+<div>
+<label for="name">Search customer: </label> <br/>
+<input type="text" class="form-control" id="name" [(ngModel)] = "customerSearch.firstName">
+<button (click)="findCustomer(customerSearch)">Search</button>
+</div>
+<!-- display data -->
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Postal Code</th>
+    <th>Phone</th>
+    <th>Date of birth</th>
+    <th>Items purchased</th>
+  </tr>
+  <tr *ngFor="let c of customers">
+    <td>{{ c.firstName }} {{ c.lastName }}</td>
+    <td>{{ c.postalCode }}</td>
+    <td>{{ c.phone }}</td>
+    <td>{{ c.dob.toDateString() }}</td>
+    <td>{{ c.items }}</td>
+  </tr>
+</table>
